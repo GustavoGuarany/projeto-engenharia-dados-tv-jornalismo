@@ -22,7 +22,7 @@ Este projeto envolve a transferência de dados de um banco de dados SQL Server p
 <br>
 
 ## Overview da solução
-![AWS Glue Job (1)](https://github.com/GustavoGuarany/projeto-ed-tv-jornalismo/assets/126171692/12b86413-927b-4791-9376-6db847c8a65e)
+![overview](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/795a80b5-e97f-4be7-90ff-90471dafc12e)
 <br>
 
 ## Desafios e potenciais impactos 
@@ -41,7 +41,7 @@ Este projeto envolve a transferência de dados de um banco de dados SQL Server p
 ## Backup do SQL Server 
 ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)	![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-![sql-server-jupyter-postgres](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/6c58c6b7-4e4d-4cd4-80a8-248900800aac)
+![sql-server-jupyter-postgres](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/4e960e2e-78b8-4daf-b63e-a3d5fa9f0d26)
 
 1. Docker
 [Instalação do docker em ambiente windows](https://docs.docker.com/desktop/install/windows-install/)
@@ -316,7 +316,7 @@ O processo de ETL pode ser contínuo, permitindo que os dados sejam atualizados 
 
 <br><br>
 
-![crawler](https://github.com/GustavoGuarany/projeto-ed-tv-jornalismo/assets/126171692/76835da7-01bb-45fb-9763-9b7fb20ca9ec)
+![crawler](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/e5a95de7-f15a-4978-bdb3-69632fbce6c0)
 
 <br><br>
 
@@ -397,7 +397,7 @@ ORDER BY TOTAL_MAT DESC
 
 <br>
 
-![tela-athena_borra](https://github.com/GustavoGuarany/projeto-ed-tv-jornalismo/assets/126171692/f3f7302d-be59-443a-9a75-1fa0333c8d5c)
+![tela-athena_borra](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/dc33a604-2cc1-4859-b443-a0d63c2dfed3)
 
 <br>
  
@@ -414,15 +414,15 @@ ORDER BY TOTAL_MAT DESC
 
 **Visualizações**
 
-![tela-01-powerbi_borra](https://github.com/GustavoGuarany/projeto-ed-tv-jornalismo/assets/126171692/b4687189-01be-4219-86a5-d61659bd4402)
+![tela-01-powerbi_borra](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/d9fd2e73-d8e4-42c0-aa16-e4d5efcf39e4)
 
 <br><br>
 
-![tela-02-powerbi_borra](https://github.com/GustavoGuarany/projeto-ed-tv-jornalismo/assets/126171692/8efad900-5b42-4085-907a-0692b5afafb5)
+![tela-02-powerbi_borra_2](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/082617ae-6f45-458e-9bc4-e75d53a5947b)
 
 <br><br>
 
-![tela-03-powerb_borra](https://github.com/GustavoGuarany/projeto-ed-tv-jornalismo/assets/126171692/6a90a8be-d3de-4412-b2f8-1aab66dedf80)
+![tela-03-powerb_borra](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/9c911c68-208e-4399-a930-39c2615ef284)
 
 <br><br>
 

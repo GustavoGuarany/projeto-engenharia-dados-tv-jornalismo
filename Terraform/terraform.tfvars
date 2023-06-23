@@ -1,0 +1,12 @@
+project_name = "tvnews"
+environment = "prod"
+bucket_names = ["landing","processed","curated","scripts","athena"]
+db_username = "postgres"
+db_password = "GgGg2807"
+db_port = 3306
+vpc_group_name = "vpc-group-name-dms"
+vpc_group_description = "Allow access to environment"
+vpc_id = ["vpc-0f70f9bea4baf35a5"]
+subnet_id = ["subnet-02595c3154e02d5d6","subnet-072108e8804f443fd","subnet-00f55895ec35ddc06","subnet-02d9b2101cc6050a8"]
+security_group_id_list = ["sg-029ef1a593877e4df"]
+athena_database_name = "materias"

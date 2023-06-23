@@ -344,7 +344,7 @@ Após a execução do crawler o aws glue cria uma tabela no AwsDataCatalog e ess
 
 Configurações > Manage Settings > Direcione o resultado das consultas para o backet athena-query-tvnews
 
-<br><br>
+<br>
 
 **Código para consultar as tabelas diretamente no Athena** ⬇️
 <details>

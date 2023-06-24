@@ -41,8 +41,6 @@ Este projeto envolve a transferência de dados de um banco de dados SQL Server p
 ## Backup do SQL Server 
 ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)	![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-![sql-server-jupyter-postgres](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/4e960e2e-78b8-4daf-b63e-a3d5fa9f0d26)
-
 1. Docker
 [Instalação do docker em ambiente windows](https://docs.docker.com/desktop/install/windows-install/)
 
@@ -87,6 +85,8 @@ Utilização do terraform para provisionamento de recursos e gerenciamento da in
   
 ## Migração dos dados do banco Sql Server no Docker para RDS Postgres 
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)
+
+![sql-server-jupyter-postgres](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/4e960e2e-78b8-4daf-b63e-a3d5fa9f0d26)
 
 Migração de dados de um banco SQL Server rodando no contêiner Docker para um banco PostgreSQL na AWS RDS.<br><br>
 `Python`<br>

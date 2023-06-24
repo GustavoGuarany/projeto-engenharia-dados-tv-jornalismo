@@ -278,8 +278,8 @@ df_soft = df_joined.select('CODMATERIA', 'PRODUTOR','REPORTER','CINEGRAFISTA','M
 
 df_soft = df_soft.withColumn("MA_LOCAL", when(col("MA_LOCAL") == 'POLÍCIA', 'DELEGACIA').otherwise(col("MA_LOCAL")))\
                    .withColumn("MA_LOCAL", when(col("MA_LOCAL") == 'POLICIA', 'DELEGACIA').otherwise(col("MA_LOCAL")))\
-                   .withColumn("MA_LOCAL", when(col("MA_LOCAL") == 'ESTÁDIO BARBALHÃO', 'ESTÁDIO ').otherwise(col("MA_LOCAL")))\
-                   .withColumn("MA_LOCAL", when(col("MA_LOCAL") == 'COLOSSO DO TAPAJÓS', 'ESTÁDIO ').otherwise(col("MA_LOCAL")))\
+                   .withColumn("MA_LOCAL", when(col("MA_LOCAL") == 'ESTADIO', 'ESTÁDIO ').otherwise(col("MA_LOCAL")))\
+                   .withColumn("MA_LOCAL", when(col("MA_LOCAL") == 'COLOSSO', 'ESTÁDIO ').otherwise(col("MA_LOCAL")))\
                    .withColumn("MA_LOCAL", when(col("MA_LOCAL") == 'CÂMARA', 'CÂMARA DE VEREADORES').otherwise(col("MA_LOCAL")))
 
 -- Limpeza na coluna MA_LOCAL 
@@ -293,7 +293,7 @@ df_final = df_soft.withColumn('MA_LOCAL', when(col('MA_LOCAL').rlike('X{2,}'), '
 
 
 -- Crie uma lista das palavras que você deseja substituir
-palavras_para_substituir = [ 'NA PAURTA',r'\bS\b',r'\bN PAUTA\b',r'\b-\b','NA PAUTA', r'\b//\b','NA PAUTA//','SANTARÉM','SANTAREM','TV','STM','VÁRIOS','///','/','VER PAUTA','VER PAUTA','INDEFINIDO',r'\bRUA\b','VER NA PAUTA','RUAS','A DEFINIR','\\.', r'\b;\b', r'\bVÍDEO\b','\\*+',r'\bR\b',r'\bRR\b','RRR','SSSS',r'\bD\b','AAA',r'\bAA\b','////','SSS',r'\bSS\b',r'\bQ\b',r'\bVARIOS\b','LLLL','NA ´PAUTA','N APAUTA','NA OPAUTA','GGG','NA PAUTAS']  # note que estamos escapando o ponto
+palavras_para_substituir = [ 'NA PAURTA',r'\bS\b',r'\bN PAUTA\b',r'\b-\b','NA PAUTA', r'\b//\b','NA PAUTA//',,'TV','STM','VÁRIOS','///','/','VER PAUTA','VER PAUTA','INDEFINIDO',r'\bRUA\b','VER NA PAUTA','RUAS','A DEFINIR','\\.', r'\b;\b', r'\bVÍDEO\b','\\*+',r'\bR\b',r'\bRR\b','RRR','SSSS',r'\bD\b','AAA',r'\bAA\b','////','SSS',r'\bSS\b',r'\bQ\b',r'\bVARIOS\b','LLLL','NA ´PAUTA','N APAUTA','NA OPAUTA','GGG','NA PAUTAS']  # note que estamos escapando o ponto
 
 -- Crie a expressão regular
 regex = '|'.join(palavras_para_substituir)

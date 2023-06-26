@@ -81,7 +81,7 @@ GO
 ## Criação de uma instância do RDS Postgres 
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
 
-Nesta etapa criamos uma instância do RDS Postgres. A principal justificativa para a escolha do RDS Postgres baseia-se na sua excelente relação custo-benefício, aliada à ampla gama de recursos disponíveis.
+Nesta etapa, criamos uma instância do RDS Postgres. A principal justificativa para a escolha do RDS Postgres baseia-se na sua excelente relação custo-benefício, aliada à ampla gama de recursos disponíveis.
 
 Utilização do terraform para provisionamento de recursos e gerenciamento da infraestrutura.
 * [Tutorial instalção do Terraform no Windows](https://github.com/GustavoGuarany/terraform/blob/main/README.md)
@@ -99,6 +99,7 @@ Migração de dados de um banco SQL Server rodando no contêiner Docker para um 
 `Bibliotecas pyodbc, pandas e sqlalchemy.`<br><br>
 
 **Código Migração SQL Server para o RDS** ⬇️
+
 <details>
 
 <summary>migration-sql-server-rds-postgres.py</summary>
@@ -151,6 +152,8 @@ for df, tabela in zip(dataframes, nomes_tabelas):
 ## Migração dos dados do RDS para S3 com DMS 
 ![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white) 
 
+A migração dos dados para o Amazon S3 apresenta várias vantagens, o s3 é altamente escalável, é projeto para fornecer 99,99% de disponibilidade, não há custos mínimos nem compromissos iniciais e tem uma ótima integração com outros serviços da AWS.
+
 Cada etapa será realizada via códigos Terraform
 
 Para realizar a migração dos dados da instância RDS para o S3 usando o AWS DMS (Data Migration Service), seguiremos algumas etapas.
@@ -168,6 +171,8 @@ Após a criação e iniciação da tarefa de migração, o AWS DMS começará a 
  
 ## Transformação dos dados com AWS Glue  
 ⚙️  Preparação e o carregamento dos dados para análise.
+
+O AWS Glue também apresenta várias vantagens na sua ultilização, é um serviço serverless, oferece recursos para descoberta automática de dados, interface gráfica interativa, é facilmente escalável e se integra bem com outros serviços da AWS.  
 
 **Etapas**
 * job ETL: execução do script python    

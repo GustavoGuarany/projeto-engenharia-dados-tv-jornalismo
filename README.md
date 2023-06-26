@@ -1,13 +1,13 @@
-# Projeto de Engenharia de Dados: Migração, Processamento e Visualização de um Banco de Dados SQL Server para um Ambiente AWS com Datalake e Power BI
+# Projeto de Engenharia de Dados na Prática: Migração, Processamento e Visualização
 
-Este projeto envolve a transferência de dados de um banco de dados SQL Server para a AWS, sua transformação e posterior visualização no Power BI. Ao longo deste processo, são utilizadas várias tecnologias e serviços da AWS, como RDS, DMS, Glue e Athena, para garantir uma manipulação de dados eficiente e eficaz.
+Este projeto envolve a criação de um contêiner no Docker para restaurar o backup do banco de dados original, que é um SQL Server. Em seguida, os dados são transferidos para um banco de dados PostgreSQL na AWS, transformados e posteriormente visualizados no Power BI. Ao longo deste processo, são utilizadas várias tecnologias e serviços da AWS, como RDS, DMS, Glue e Athena, que garantem uma manipulação de dados eficiente e eficaz ao longo de todo processo.
 
-
-
+Utilização do Terraform como ferramenta de infraestrutura como código (IaC). O uso do Terraform como uma ferramenta de infraestrutura como código (IaC) oferece diversos benefícios para o projeto. Com o Terraform, é possível definir a infraestrutura como código. Isso permite um controle preciso e rastreamento dos recursos provisionados, garantindo consistência e facilitando a revisão e auditoria.
 
 ## 💻 Sumário
 * [Overview da solução](#overview-da-solução)
-* [Desafios e potenciais impactos ](#desafios-e-potenciais-impactos)
+* [Desafios](#desafios)
+* [Potenciais Impactos](#potenciais-impactos)
 * [Backup do SQL Server](#backup-do-sql-server)
     + Instalação Docker 
     + Criação de um container sql server.
@@ -25,26 +25,30 @@ Este projeto envolve a transferência de dados de um banco de dados SQL Server p
 ![overview](https://github.com/GustavoGuarany/projeto-engenharia-dados-tv-jornalismo/assets/126171692/795a80b5-e97f-4be7-90ff-90471dafc12e)
 <br>
 
-## Desafios e potenciais impactos 
+## Desafios 
 1. Garantia da integridade e consistência dos dados
 2. Otimização do desempenho dos recursos
 3. Segurança dos dados durante todo o fluxo
-4. Identificação dos repórteres mais ativos
-5. Analise dos locais das matérias e as cidades com maior cobertura
-6. Distribuição de tipos de matérias
-7. Identificação de cinegrafistas e produtores mais ativos
-8. Análise temporal: identificação de padrões sazonais, quantidade e tipos de matérias por período 
-9. Identificação da subutilização do sistema
+4. Qualidade dos dados
+5. Governança de dados
+
+## Potenciais Impactos    
+1. Identificação dos repórteres mais ativos
+2. Analise dos locais das matérias e as cidades com maior cobertura
+3. Distribuição de tipos de matérias
+4. Identificação de cinegrafistas e produtores mais ativos
+5. Análise temporal: identificação de padrões sazonais, quantidade e tipos de matérias por período 
+6. Identificação da subutilização do sistema
 <br>
 
  
 ## Backup do SQL Server 
 ![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)	![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 
-1. Docker
+1. Criação de um container docker para instalar o sql server e restaurar o backup do banco de dados.
 [Instalação do docker em ambiente windows](https://docs.docker.com/desktop/install/windows-install/)
 
-2. Criação de um container docker para instalar o sql server e restaurar o backup do banco de dados.
+2. No PowerShell
 
 Pull da imagem de contêiner do SQL Server mais recente.
 ```console
@@ -76,6 +80,8 @@ GO
 
 ## Criação de uma instância do RDS Postgres 
 ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+
+Nesta etapa criamos uma instância do RDS Postgres. A principal justificativa para a escolha do RDS Postgres baseia-se na sua excelente relação custo-benefício, aliada à ampla gama de recursos disponíveis.
 
 Utilização do terraform para provisionamento de recursos e gerenciamento da infraestrutura.
 * [Tutorial instalção do Terraform no Windows](https://github.com/GustavoGuarany/terraform/blob/main/README.md)

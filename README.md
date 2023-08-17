@@ -58,7 +58,7 @@ docker pull mcr.microsoft.com/mssql/server:2022-latest
 ```console
 docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=sua_senha_aqui' \
    -p 1433:1433 --name meu-sql-server \
-   -v sql1data:/var/opt/mssql\
+   -v home/pasta_exemplo/pasta_exemplo:/var/opt/mssql
    -d mcr.microsoft.com/mssql/server:2022-latest
 ```
 4. Movendo o arquivo de backup para o contêiner
